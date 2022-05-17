@@ -3,7 +3,7 @@
 const OrgCard = () => {
   return (  
     <>
-
+      <h1>HELLO</h1>
     </>
   );
 }

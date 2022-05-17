@@ -5,6 +5,8 @@ import { getOrgs } from "../../services/api-calls";
 
 const OrgList = (props) => {
   const [orgs, setOrgs] = useState([])
+  let items = orgs.items
+  console.log(items)
 
   useEffect(()=> {
     getOrgs()
@@ -17,10 +19,10 @@ const OrgList = (props) => {
       <div 
       className={styles.container}
       >
-        {orgs.map(org => (
+        {items.map(item => (
           <OrgCard
             // key={org._id} 
-            org={org} 
+            item={item} 
           />
         ))}
       </div>

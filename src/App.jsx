@@ -28,7 +28,8 @@ const App = () => {
       <Routes>
       <Route 
         path="/"
-        element={user ? <OrgList /> : <Navigate to="/login" />}
+        element={<OrgList />}
+        // element={user ? <OrgList /> : <Navigate to="/login" />}
         />  
         <Route
           path="/signup"
