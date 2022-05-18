@@ -29,6 +29,12 @@ const OrgList = (props) => {
             item={item} 
           />
         ))}
+        {/* {items.map(item => (
+          <OrgCard
+            // key={org._id} 
+            item={item} 
+          />
+        ))} */}
         <button onClick={addTen}>See 10 More</button>
       </div>
     </>

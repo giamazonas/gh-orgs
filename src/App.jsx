@@ -7,6 +7,7 @@ import Profiles from './pages/Profiles/Profiles'
 import ChangePassword from './pages/ChangePassword/ChangePassword'
 import * as authService from './services/authService'
 import OrgList from './pages/OrgList/OrgList'
+import OrgDetails from './pages/OrgDetails/OrgDetails'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
@@ -29,6 +30,11 @@ const App = () => {
       <Route 
         path="/"
         element={<OrgList />}
+        // element={user ? <OrgList /> : <Navigate to="/login" />}
+        />  
+        <Route 
+        path="/:id"
+        element={<OrgDetails />}
         // element={user ? <OrgList /> : <Navigate to="/login" />}
         />  
         <Route
