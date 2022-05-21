@@ -25,13 +25,13 @@ const OrgList = (props) => {
       className="ListContainer" 
       ><br /><br />
         <h1>GitHub Organizations</h1>
-        {/* {items.slice(0, count).map(item => (
+        {items.slice(0, count).map(item => (
           <OrgCard
             key={item._id} 
             item={item} 
           />
-        ))} */}
-        <button className="seeMoreButton" onClick={addTen}>See 10 More</button>
+        ))}
+        <br/><button className="seeMoreButton" onClick={addTen}>See 10 More</button><br /><br /><br/>
       </div>
     </div>
   );

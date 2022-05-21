@@ -47,7 +47,7 @@
   }
 
   .seeMoreButton {
-    background-color: #d6d5d5; 
+    background-color: white; 
     color: black;
     border-radius: 10px;
     width: 200px;
@@ -55,7 +55,7 @@
   }
 
   .seeMoreButton:hover {
-    background-color: white;
+    background-color: #d6d5d5;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
@@ -112,7 +112,7 @@
   }
 
   .seeMoreButton {
-    background-color: #d6d5d5; 
+    background-color: white; 
     color: black;
     border-radius: 10px;
     width: 200px;
@@ -120,7 +120,7 @@
   }
 
   .seeMoreButton:hover {
-    background-color: white;
+    background-color: #d6d5d5;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
   }
 

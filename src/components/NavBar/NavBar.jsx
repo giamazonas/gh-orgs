@@ -4,6 +4,7 @@ import styles from './NavBar.module.css'
 const NavBar = ({ user, handleLogout }) => {
   return (
     <div  className={styles.container}>
+      <img className="ghImage"src="https://i.imgur.com/GsyVTOR.png" alt="github" height="25" ></img>
       {/* {user ?
         <nav >
           <ul className="navBarContainer">
