@@ -27,7 +27,7 @@ const OrgList = (props) => {
         <h1>GitHub Organizations</h1>
         {items.slice(0, count).map(item => (
           <OrgCard
-            key={item._id} 
+            key={item.id} 
             item={item} 
           />
         ))}
