@@ -10,34 +10,30 @@ const OrgList = (props) => {
   const addTen = () => {
     setCount(count +10)
   }
-  console.log(items)
 
-  useEffect(()=> {
-    getOrgs()
-    .then(orgData => setOrgs(orgData))
+  useEffect(() => {
+    const fetchGetOrgs = async() => {
+      const orgData = await getOrgs()
+      setOrgs(orgData)
+    }
+    fetchGetOrgs()
   }, [])
-
+  
   return (  
-    <>
-      <h1>GitHub Organizations</h1>
+    <div className={styles.container} id="ListContainer">
       <div 
-      className={styles.container}
-      >
+      className="ListContainer" 
+      ><br /><br />
+        <h1>GitHub Organizations</h1>
         {items.slice(0, count).map(item => (
           <OrgCard
-            // key={org._id} 
+            key={item._id} 
             item={item} 
           />
         ))}
-        {/* {items.map(item => (
-          <OrgCard
-            // key={org._id} 
-            item={item} 
-          />
-        ))} */}
-        <button onClick={addTen}>See 10 More</button>
+        <button className="seeMoreButton" onClick={addTen}>See 10 More</button>
       </div>
-    </>
+    </div>
   );
 }
 

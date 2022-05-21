@@ -1,24 +1,23 @@
-// import styles from './orgcard.module.css'
+import styles from './OrgCard.module.css'
 import { Link } from 'react-router-dom'
 
 const OrgCard = (props) => {
-  console.log('CARD TEST', props)
   
   let eachOrg = props.item 
-  console.log('DIG', eachOrg.login)
 
   return (  
-    <>
-    <div className="orgCard">
-      <h1></h1>
+    <div  className={styles.container} >
+      <div className="orgCard" id="orgCard"  >
         <h2>{eachOrg.login}</h2>
         <h2>{eachOrg.organizations_url}</h2>
+        <p> HELLO HI HELLO </p>
+        <Link 
+          to={`/${eachOrg.id}`}
+          eachOrg={eachOrg}
+          state={{eachOrg}}
+        >See More info..</Link>
+      </div>
     </div>
-    <Link 
-      to={`/${eachOrg.login}`}
-      state={eachOrg}
-    >See More info..</Link>
-    </>
   );
 }
 

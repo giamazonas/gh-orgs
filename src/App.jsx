@@ -34,7 +34,9 @@ const App = () => {
         />  
         <Route 
         path="/:id"
-        element={<OrgDetails />}
+        element={<OrgDetails 
+          
+        />}
         // element={user ? <OrgList /> : <Navigate to="/login" />}
         />  
         <Route
