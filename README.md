@@ -9,19 +9,6 @@
 <br>
 <br>
 
-## EXPLORE HERE  
-___________________
-
-
-<br>
-<br>
-
-### SCREENSHOTS 
-___________
-<br>
-<br>
-
-
 
 ### TECH USED 
 ________________
