@@ -8,17 +8,7 @@ const OrgList = (props) => {
   let items = orgs.items
   console.log('ITEMS', items)
   console.log('ORGS', orgs)
-  // ______________________________________
-  // attempt to drive into object - doesn't recognize "length"
-    // for(let i = 0; i < items.length; i++){
-      // let cadaUm = items[i]
-        // for (let a = 0; a < cadaUm.length; a++){
-        //   console.log(cadaUm[a])
-        // }
-    //   return cadaUm
-    // }
-  // console.log('CADA', cadaUm)
-  // _________________________________________
+
 
 //  NOTE  - having issues using slice method on an array of objects. It works, until page is reloaded, then it stops working. 
 
@@ -48,15 +38,6 @@ const OrgList = (props) => {
             item={item} 
           />
         ))}
-{/* _____________________________________________ */}
-        {/* {cadaUm.slice(0, count).map(a => (
-          <OrgCard
-            key={a.id} 
-            // item={item} 
-            a={a}
-          />))
-        } */}
-{/* _________________________________________________ */}
         <br/><button className="seeMoreButton" onClick={addTen}>See 10 More</button><br /><br /><br/>
       </div>
     </div>
